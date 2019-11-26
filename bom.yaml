@@ -1,0 +1,12 @@
+- job:
+    name: backport-o-matic_stein
+    project-type: pipeline
+    sandbox: true
+    pipeline-scm:
+      scm:
+        - git:
+            url: https://github.com/coreycb/bom-jjb-config.git
+            branches:
+            - origin/master
+      script-path: backport-o-matic-stein.groovy
+      lightweight-checkout: true

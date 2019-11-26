@@ -1,0 +1,7 @@
+[job_builder]
+allow_duplicates=True
+
+[jenkins]
+user=admin
+password=admin
+url=http://10.5.0.17:30631/
